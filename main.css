@@ -1,3 +1,8 @@
 .topicDiv h1{
     color: blue;
 }
+.navLink {
+display: inline;
+padding-left: 5px;
+padding-right: 5px;
+}
