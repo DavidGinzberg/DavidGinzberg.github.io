@@ -19,10 +19,13 @@ $(document).ready(function(){
 	)));
 	
 	//TODO: Add a link for each topic
-	/*
-	for topic in $(".topicDiv"){
-	
-	}*/
+	$(".topicDiv").each(function(index){
+		
+		$("<li/>", {
+			class:	"navLink",
+			text:	$(this).data("link-name")
+		} ).appendTo(navBar.find(".navLinksList"));
+	});
 	// add the nav bar to the top of the page
 	$("body").prepend(navBar);
 });
